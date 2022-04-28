@@ -1,0 +1,2 @@
+PROJECT(task1)
+ADD_SUBDIRECTORY(src bin)

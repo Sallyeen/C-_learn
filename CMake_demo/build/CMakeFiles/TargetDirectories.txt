@@ -1,0 +1,13 @@
+/home/gw00243982/Desktop/GJ/C++_learn/code/CMake_demo/build/CMakeFiles/install/strip.dir
+/home/gw00243982/Desktop/GJ/C++_learn/code/CMake_demo/build/CMakeFiles/install.dir
+/home/gw00243982/Desktop/GJ/C++_learn/code/CMake_demo/build/CMakeFiles/install/local.dir
+/home/gw00243982/Desktop/GJ/C++_learn/code/CMake_demo/build/CMakeFiles/list_install_components.dir
+/home/gw00243982/Desktop/GJ/C++_learn/code/CMake_demo/build/CMakeFiles/edit_cache.dir
+/home/gw00243982/Desktop/GJ/C++_learn/code/CMake_demo/build/CMakeFiles/rebuild_cache.dir
+/home/gw00243982/Desktop/GJ/C++_learn/code/CMake_demo/build/bin/CMakeFiles/install/strip.dir
+/home/gw00243982/Desktop/GJ/C++_learn/code/CMake_demo/build/bin/CMakeFiles/edit_cache.dir
+/home/gw00243982/Desktop/GJ/C++_learn/code/CMake_demo/build/bin/CMakeFiles/hello.dir
+/home/gw00243982/Desktop/GJ/C++_learn/code/CMake_demo/build/bin/CMakeFiles/rebuild_cache.dir
+/home/gw00243982/Desktop/GJ/C++_learn/code/CMake_demo/build/bin/CMakeFiles/list_install_components.dir
+/home/gw00243982/Desktop/GJ/C++_learn/code/CMake_demo/build/bin/CMakeFiles/install/local.dir
+/home/gw00243982/Desktop/GJ/C++_learn/code/CMake_demo/build/bin/CMakeFiles/install.dir

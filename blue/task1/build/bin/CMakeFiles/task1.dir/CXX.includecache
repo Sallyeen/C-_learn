@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/gw00243982/gj/a01_C++_learn/code/blue/task1/src/main.cpp
+iostream
+-
+cstdlib
+-
+ctime
+-
+vector
+-
+numeric
+-
+algorithm
+-
+
