@@ -1,0 +1,4 @@
+/home/gw00243982/Desktop/GJ/C++_learn/code/test/COPYRIGHT
+/home/gw00243982/Desktop/GJ/C++_learn/code/test/README.md
+/home/gw00243982/Desktop/GJ/C++_learn/code/test/runhello.sh
+/home/gw00243982/Desktop/GJ/C++_learn/code/test/hello.txt

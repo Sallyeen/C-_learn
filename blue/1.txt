@@ -1,0 +1,11 @@
+.
+├── 1.txt
+└── add_and_minus
+    ├── a.out
+    ├── pic
+    │   ├── easy.png
+    │   └── medium.png
+    ├── readme.md
+    └── solution.cpp
+
+2 directories, 6 files
