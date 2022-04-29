@@ -1,5 +1,3 @@
 /home/gw00243982/gj/a01_C++_learn/code/blue/task1/build/CMakeFiles/rebuild_cache.dir
+/home/gw00243982/gj/a01_C++_learn/code/blue/task1/build/CMakeFiles/task1.dir
 /home/gw00243982/gj/a01_C++_learn/code/blue/task1/build/CMakeFiles/edit_cache.dir
-/home/gw00243982/gj/a01_C++_learn/code/blue/task1/build/bin/CMakeFiles/rebuild_cache.dir
-/home/gw00243982/gj/a01_C++_learn/code/blue/task1/build/bin/CMakeFiles/task1.dir
-/home/gw00243982/gj/a01_C++_learn/code/blue/task1/build/bin/CMakeFiles/edit_cache.dir

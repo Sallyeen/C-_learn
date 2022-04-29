@@ -13,9 +13,9 @@
 
 # 运行截图
 easy等级运行截图：
-![easy等级运行截图](/blue/add_and_minus/pic/easy.png)
+![easy等级运行截图](/blue/task1/pic/easy.png)
 medium等级运行截图：
-![medium等级运行截图](/pic/medium.png)
+![medium等级运行截图](/blue/task1/pic/medium.png)
 
 从运行结果看，程序较好地完成了作业。
 

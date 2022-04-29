@@ -60,57 +60,39 @@ CMAKE_SOURCE_DIR = /home/gw00243982/gj/a01_C++_learn/code/blue/task1
 CMAKE_BINARY_DIR = /home/gw00243982/gj/a01_C++_learn/code/blue/task1/build
 
 #=============================================================================
-# Directory level rules for directory bin
-
-# Convenience name for "all" pass in the directory.
-bin/all: bin/CMakeFiles/task1.dir/all
-
-.PHONY : bin/all
-
-# Convenience name for "clean" pass in the directory.
-bin/clean: bin/CMakeFiles/task1.dir/clean
-
-.PHONY : bin/clean
-
-# Convenience name for "preinstall" pass in the directory.
-bin/preinstall:
-
-.PHONY : bin/preinstall
-
-#=============================================================================
-# Target rules for target bin/CMakeFiles/task1.dir
+# Target rules for target CMakeFiles/task1.dir
 
 # All Build rule for target.
-bin/CMakeFiles/task1.dir/all:
-	$(MAKE) -f bin/CMakeFiles/task1.dir/build.make bin/CMakeFiles/task1.dir/depend
-	$(MAKE) -f bin/CMakeFiles/task1.dir/build.make bin/CMakeFiles/task1.dir/build
+CMakeFiles/task1.dir/all:
+	$(MAKE) -f CMakeFiles/task1.dir/build.make CMakeFiles/task1.dir/depend
+	$(MAKE) -f CMakeFiles/task1.dir/build.make CMakeFiles/task1.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gw00243982/gj/a01_C++_learn/code/blue/task1/build/CMakeFiles --progress-num=1,2 "Built target task1"
-.PHONY : bin/CMakeFiles/task1.dir/all
+.PHONY : CMakeFiles/task1.dir/all
 
 # Include target in all.
-all: bin/CMakeFiles/task1.dir/all
+all: CMakeFiles/task1.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-bin/CMakeFiles/task1.dir/rule: cmake_check_build_system
+CMakeFiles/task1.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gw00243982/gj/a01_C++_learn/code/blue/task1/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 bin/CMakeFiles/task1.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/task1.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gw00243982/gj/a01_C++_learn/code/blue/task1/build/CMakeFiles 0
-.PHONY : bin/CMakeFiles/task1.dir/rule
+.PHONY : CMakeFiles/task1.dir/rule
 
 # Convenience name for target.
-task1: bin/CMakeFiles/task1.dir/rule
+task1: CMakeFiles/task1.dir/rule
 
 .PHONY : task1
 
 # clean rule for target.
-bin/CMakeFiles/task1.dir/clean:
-	$(MAKE) -f bin/CMakeFiles/task1.dir/build.make bin/CMakeFiles/task1.dir/clean
-.PHONY : bin/CMakeFiles/task1.dir/clean
+CMakeFiles/task1.dir/clean:
+	$(MAKE) -f CMakeFiles/task1.dir/build.make CMakeFiles/task1.dir/clean
+.PHONY : CMakeFiles/task1.dir/clean
 
 # clean rule for target.
-clean: bin/CMakeFiles/task1.dir/clean
+clean: CMakeFiles/task1.dir/clean
 
 .PHONY : clean
 

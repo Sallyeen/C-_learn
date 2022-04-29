@@ -38,7 +38,7 @@ int main()
         if (num_1 % 4 == 0)
         {
             ans = num_1 + num_2;
-            std::cout << "请输入" << num_1 << "+" << num_2 << "的答案:\n";
+            std::cout << "请输入 " << num_1 << " + " << num_2 << " 的答案:\n";
             time_t start = time(0);
             std::cin >> ans_in;
             time_t finish = time(0);
@@ -49,7 +49,7 @@ int main()
         else if (num_1 % 4 == 1)
         {
             ans = num_1 - num_2;
-            std::cout << "请输入" << num_1 << "-" << num_2 << "的答案:\n";
+            std::cout << "请输入 " << num_1 << " - " << num_2 << " 的答案:\n";
             time_t start = time(0);
             std::cin >> ans_in;
             time_t finish = time(0);
@@ -60,7 +60,7 @@ int main()
         else if (num_1 % 4 == 2)
         {
             ans = num_1 * num_2;
-            std::cout << "请输入" << num_1 << "*" << num_2 << "的答案:\n";
+            std::cout << "请输入 " << num_1 << " * " << num_2 << " 的答案:\n";
             time_t start = time(0);
             std::cin >> ans_in;
             time_t finish = time(0);
@@ -71,7 +71,7 @@ int main()
         else
         {
             ans = num_1 / num_2;
-            std::cout << "请输入" << num_1 << "/" << num_2 << "的答案:\n";
+            std::cout << "请输入 " << num_1 << " / " << num_2 << " 的答案:\n";
             time_t start = time(0);
             std::cin >> ans_in;
             time_t finish = time(0);
@@ -80,6 +80,7 @@ int main()
             op_.push_back(4);
         }
         ans_whole.push_back(ans);
+
         if (ans == ans_in)
         {
             printf("Bingo!\n");
@@ -93,10 +94,11 @@ int main()
             numarr_2.push_back(num_2);
         }
     } 
-    int num_wrong = 10-flag;
-    int score = flag * 2;
+    int num_wrong = 10 - flag;
+    int score = flag * (100/((degree_+1)*10));
     std::cout << "你答对的题数为: " << flag << "\n"; 
     std::cout << "你答错的题数为: " << num_wrong << "\n"; 
+    std::cout << "你的最终分数为: " << score << "\n";
     std::cout << "全部正确答案为: " << "\n";    
     for(int i=0; i<ans_whole.size(); i++)
     {
@@ -119,9 +121,9 @@ int main()
             case 4:
                 std::cout << numarr_1[i] << " / " << numarr_2[i] << " = " << ans_wrong[i] << "\t";
                 break;
-        }
-        
+        }        
     }
+
 
     // std::cout << "你答错的题目的正确答案为: " << "\n";
     // for(int i=0; i<ans_wrong.size(); i++)
@@ -129,8 +131,7 @@ int main()
     //     std::cout<<ans_wrong[i]<<"\t";
     // }
 
-    // std::cout << "\n" << "你的最终分数为: " << score << "\n";
-
+    
     // 计算平均用时与最短用时
     double sum_ = std::accumulate(std::begin(time_), std::end(time_), 0.0);
     double avg_ = sum_ / time_.size();
