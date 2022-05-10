@@ -2,7 +2,7 @@
  * @Author: GuoJia
  * @Date: 2022-04-27 14:25
  * @Last Modified by: GuoJia
- * @Last Modified time: 2022-04-28 15:53
+ * @Last Modified time: 2022-05-10 17:35
  */
 
 #include <iostream> 
@@ -11,6 +11,8 @@
 #include <vector>
 #include <numeric>  // 为了使用累加：std::accumulate
 #include <algorithm>  // 为了统计最小值：min_element
+#include <chrono>
+
 
 int main()
 {
@@ -24,8 +26,26 @@ int main()
     std::vector<int> idx_wrong;  // 记录答错的题目索引
     std::vector<int> op_;  // 记录运算符
 
-    std::cout << "请输入你想选择的题目难易程度: 2(hard), 1(medium) or 0(easy):\n";
-    std::cin >> degree_;
+    while (true)
+    {
+        std::cout << "请输入你想选择的题目难易程度: 2(hard), 1(medium) or 0(easy):\n";
+        std::cin >> degree_;
+        bool isInt = std::cin.good();
+        if (isInt && 0 <= degree_  && degree_ <= 2)
+        {
+            break;
+        }
+        else
+        {
+            std::cout << "请输入 0, 1 或者 2" << std::endl;
+            std::cin.clear();
+            while (std::cin.get() != '\n')
+            {
+                continue;
+            }
+        }
+    }
+    
 
     srand(int(time(0)));  // 随机数种子
 
@@ -33,16 +53,32 @@ int main()
     {
         int num_1 = rand()%((degree_+1)*100);
         int num_2 = rand()%((degree_+1)*100);
-    
         int ans, ans_in;
         if (num_1 % 4 == 0)
         {
             ans = num_1 + num_2;
             std::cout << "请输入 " << num_1 << " + " << num_2 << " 的答案:\n";
-            time_t start = time(0);
-            std::cin >> ans_in;
-            time_t finish = time(0);
-            time_t time = finish - start;
+            const auto start = std::chrono::steady_clock::now();          
+            while (true)
+            {
+                std::cin >> ans_in;
+                bool isInt = std::cin.good();
+                if (isInt)
+                {
+                    break;
+                }
+                else
+                {
+                    std::cout << "请输入数字" << std::endl;
+                    std::cin.clear();
+                    while (std::cin.get() != '\n')
+                    {
+                        continue;
+                    }
+                }
+            }
+            const auto finish = std::chrono::steady_clock::now();
+            auto time = std::chrono::duration_cast<std::chrono::seconds>(finish - start).count();
             time_.push_back(double(time));
             op_.push_back(1);
         }
@@ -50,34 +86,85 @@ int main()
         {
             ans = num_1 - num_2;
             std::cout << "请输入 " << num_1 << " - " << num_2 << " 的答案:\n";
-            time_t start = time(0);
-            std::cin >> ans_in;
-            time_t finish = time(0);
-            time_t time = finish - start;
+            const auto start = std::chrono::steady_clock::now();
+            while (true)
+            {
+                std::cin >> ans_in;
+                bool isInt = std::cin.good();
+                if (isInt)
+                {
+                    break;
+                }
+                else
+                {
+                    std::cout << "请输入数字" << std::endl;
+                    std::cin.clear();
+                    while (std::cin.get() != '\n')
+                    {
+                        continue;
+                    }
+                }
+            }
+            const auto finish = std::chrono::steady_clock::now();
+            auto time = std::chrono::duration_cast<std::chrono::seconds>(finish - start).count();
             time_.push_back(double(time));
             op_.push_back(2);
         }
-        else if (num_1 % 4 == 2)
-        {
-            ans = num_1 * num_2;
-            std::cout << "请输入 " << num_1 << " * " << num_2 << " 的答案:\n";
-            time_t start = time(0);
-            std::cin >> ans_in;
-            time_t finish = time(0);
-            time_t time = finish - start;
-            time_.push_back(double(time));
-            op_.push_back(3);
-        }
-        else
+        else if (num_1 % num_2 == 0)
         {
             ans = num_1 / num_2;
             std::cout << "请输入 " << num_1 << " / " << num_2 << " 的答案:\n";
-            time_t start = time(0);
-            std::cin >> ans_in;
-            time_t finish = time(0);
-            time_t time = finish - start;
+            const auto start = std::chrono::steady_clock::now();
+            while (true)
+            {
+                std::cin >> ans_in;
+                bool isInt = std::cin.good();
+                if (isInt)
+                {
+                    break;
+                }
+                else
+                {
+                    std::cout << "请输入数字" << std::endl;
+                    std::cin.clear();
+                    while (std::cin.get() != '\n')
+                    {
+                        continue;
+                    }
+                }
+            }
+            const auto finish = std::chrono::steady_clock::now();
+            auto time = std::chrono::duration_cast<std::chrono::seconds>(finish - start).count();
             time_.push_back(double(time));
             op_.push_back(4);
+        }
+        else
+        {
+            ans = num_1 * num_2;
+            std::cout << "请输入 " << num_1 << " * " << num_2 << " 的答案:\n";
+            const auto start = std::chrono::steady_clock::now();
+            while (true)
+            {
+                std::cin >> ans_in;
+                bool isInt = std::cin.good();
+                if (isInt)
+                {
+                    break;
+                }
+                else
+                {
+                    std::cout << "请输入数字" << std::endl;
+                    std::cin.clear();
+                    while (std::cin.get() != '\n')
+                    {
+                        continue;
+                    }
+                }
+            }
+            const auto finish = std::chrono::steady_clock::now();
+            auto time = std::chrono::duration_cast<std::chrono::seconds>(finish - start).count();
+            time_.push_back(double(time));
+            op_.push_back(3);
         }
         ans_whole.push_back(ans);
 
