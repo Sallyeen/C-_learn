@@ -5,6 +5,7 @@
         "atomic": "cpp",
         "*.tcc": "cpp",
         "cctype": "cpp",
+        "chrono": "cpp",
         "clocale": "cpp",
         "cmath": "cpp",
         "cstdarg": "cpp",
@@ -12,6 +13,7 @@
         "cstdint": "cpp",
         "cstdio": "cpp",
         "cstdlib": "cpp",
+        "ctime": "cpp",
         "cwchar": "cpp",
         "cwctype": "cpp",
         "deque": "cpp",
@@ -19,9 +21,13 @@
         "vector": "cpp",
         "exception": "cpp",
         "algorithm": "cpp",
+        "functional": "cpp",
+        "iterator": "cpp",
         "memory": "cpp",
         "memory_resource": "cpp",
+        "numeric": "cpp",
         "optional": "cpp",
+        "ratio": "cpp",
         "string": "cpp",
         "string_view": "cpp",
         "system_error": "cpp",
@@ -38,12 +44,6 @@
         "sstream": "cpp",
         "stdexcept": "cpp",
         "streambuf": "cpp",
-        "typeinfo": "cpp",
-        "ctime": "cpp",
-        "functional": "cpp",
-        "iterator": "cpp",
-        "numeric": "cpp",
-        "chrono": "cpp",
-        "ratio": "cpp"
+        "typeinfo": "cpp"
     }
 }
