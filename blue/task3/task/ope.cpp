@@ -13,6 +13,7 @@ string OPE::read_file(string file_name)
         cerr << "读取文件错误!" << endl; 
     }
     getline(fin, codebook);
+    //cout << (getline(fin, codebook)) << endl;
     return codebook;
 }
 

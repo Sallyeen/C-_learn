@@ -4,20 +4,11 @@
 using namespace std;
 int main()
 {
-	string str = "000000021";
-    int flag = 0;
-    for(int i=0; i<str.size(); i++)
+	int my_array[5] = {1, 2, 3, 4, 5};
+    // 每个数组元素乘于 2
+    for (int &x : my_array)
     {
-        cout << str[i] << endl;
-		if(str[i] == '0')
-        {
-			flag++;
-			cout << "str[i]" << endl;
-		}
-        else
-        {break;}
+        x *= 2;
+        cout << x << endl;  
     }
-    str.erase(0, flag);
-	cout << flag << endl;
-	cout << str << endl;
 }

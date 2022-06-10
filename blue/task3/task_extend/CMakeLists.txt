@@ -4,11 +4,11 @@ project(task3)
 
 # set(SRC_LIST encrypt.cpp)
 
-add_library(mylib STATIC ope.cpp)
+add_library(mylib STATIC ope_extend.cpp)
 
-add_executable(entask encrypt.cpp)
+add_executable(entask encrypt_extend.cpp)
 
-add_executable(detask decrypt.cpp)
+add_executable(detask decrypt_extend.cpp)
 
 target_link_libraries(entask mylib)
 
