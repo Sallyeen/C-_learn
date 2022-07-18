@@ -43,5 +43,5 @@ task2 nums.txt base_in base_out // base_in 为输入进制数，base_out 为输�
 # 运行截图
 运行截图与如下： 
 ![运行截图](pic/cuts.png)
-![运行截图](/pic/cuts2.png)
-![运行截图](/pic/cuts3.png)
+![运行截图](pic/cuts2.png)
+![运行截图](pic/cuts3.png)
